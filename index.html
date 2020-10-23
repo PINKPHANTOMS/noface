@@ -14,38 +14,39 @@
 
   <style>
 	  
-	  
 	  divMoveRight {
   width: 100px;
   height: 100px;
-  position: relative;
+  position: absolute;
   animation-name: moveRight;
-  animation-duration: 10s;
+  animation-duration: 5s;
 }
 
 @keyframes moveRight {
-  0%   {left:-200vw; top:0px;}
-  25%  {left:0vw; top:0px;}
+  0%  {left:-80vw; top:17vw;}
+  25%  {left: 10vw; top:17vw;}
 }
 
 	  divMoveLeft {
   width: 100px;
   height: 100px;
-  position: relative;
+  position: absolute;
   animation-name: moveLeft;
-  animation-duration: 10s;
+  animation-duration: 5s;
+
 }
 
 @keyframes moveLeft {
-  0%   {left:200vw; top:0vw;}
-  25%  {left:0vw; top:0px;}
+  0%   {left:150vw; top:17.5vw;}
+  25%  {left:85vw; top:17.5vw;}
 }
 	  divMoveDown {
-  width: 100px;
-  height: 100px;
+  width: 100vw;
+  height: 100vw;
   position: relative;
   animation-name: moveDown;
-  animation-duration: 10s;
+  animation-fill-mode: none;
+  animation-duration: 5s;
 }
 
 @keyframes moveDown {
@@ -58,7 +59,7 @@
   height: 100px;
   position: relative;
   animation-name: moveUp;
-  animation-duration: 10s;
+  animation-duration: 5s;
 }
 
 @keyframes moveUp {
@@ -140,64 +141,54 @@ background-color: none;
   color: black;
 }
 
-
-/*  .hero-image9 {
-  background-image: url('././images/phantoms4.jfif');
-  background-color: black;
-  background-position: center;
-  position: relative;*/
   </style>
 
-  <!-- <div class="hero-image9"> -->
 
 <body bgcolor="611920">
-<center>
-			
-		<divMoveDown>
-		<img src="images\logo\main.png" style="width: 50vw; z-index: -2; margin-top: -5%;">
-			</divMoveDown>
-			
-<divMoveRight>		
-		<a href= "visualArt.html" style= "text-decoration: none">
 
-<p style = "font-size: 5vw; color:black; margin-top: -35vw; margin-left: -75vw;  z-index: 1; padding-bottom: 40%; text-shadow: 0px 0px 15px orange; letter-height: 80%;">
-  <b>
+	<h>
+		 <p style = "padding-left: 10vw; padding-top: 17vw;">				
+
+	 <divMoveRight>
+		<a href= "visualArt.html" style = "font-size: 10vw; color:black; z-index: 2; text-shadow: 0px 0px 15px orange; 10vw; text-decoration: none;">
+
 	A<br>
 	R<br>
 	T<br>
-</b>
-</p>
 </a>
-</divMoveRight>
-			
-	
+
+</divMoveRight>	
+</p>
+</p>
+			 <p style = "padding-left: 85vw; margin-top: -2vw;">				
+
 <divMoveLeft>	
 	<divMedia>	
-		<a href= "gallery.html" style = "text-decoration: none">
-
-<p style = "font-size: 5vw; color:black; margin-left: 80vw; margin-top: -63vw; z-index: 1; padding-bottom: 40%; text-shadow: 0px 0px 15px orange; letter-height: 80%; writing-mode: horizontal-rl;">
-  <b>
+		<a href= "gallery.html" style = "font-size: 7vw; color:black; z-index: 1; text-decoration: none; text-shadow: 0px 0px 15px orange;">
+		
 	M<br>
 	E<br>
 	D<br>
 	I<br>
 	A<br>
-</b>
-</p>
+
 </a>
 </divMedia>
 </divMoveLeft>
+</p>
+</h>
+<center>
+		<divMoveDown>
+		<img src="images\logo\main.png" style="width: 50vw; z-index: 2; margin-top: -20%;">
+			</divMoveDown>
+		<br>
+			<br>	
 
-
-
-<!-- <img src="images\logo.jpg" style="width:100vw; height:40vw; z-index: -1; margin-top:-75%"> -->
 	
-<p style = "font-size: 100%; color:white; margin-top:-35%; position: auto; z-index: 2;">
-
-
+<p style = "font-size: 100%; color:white; position: auto; z-index: -1;">
 
 	   <a href="https://soundcloud.com/max-michaud-676915130/sets/of-darke-and-whimsy" style="  text-decoration: none;">
-				<img width= '20%'; src="images\logo\soundcloud.png">
+	<img width= '20%'; src="images\logo\soundcloud.png">
 
 </a>
 
@@ -233,7 +224,7 @@ width="100%" style="z-index: -2:">
 	
 	<divMoveUp>
 
-	<a href="https://twitter.com/noface7alt" style=" text-decoration: none;">
+	<a href="https://twitter.com/noface7alt" style=" text-decoration: none; padding-right: 2%;">
 <img width= '20%'; src="images\logo\twitter.png" >
 	</a>
 	<a href="https://instagram.com/noface7alt" style=" text-decoration: none;">
