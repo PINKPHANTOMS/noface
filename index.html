@@ -15,19 +15,23 @@
   <style>
 	  
 	  divMoveRight {
+  animation-fill-mode: forwards !important; 
   width: 100px;
   height: 100px;
-  position: absolute;
+  position: relative;
   animation-name: moveRight;
   animation-duration: 5s;
+
 }
 
 @keyframes moveRight {
   0%  {left:-80vw; top:17vw;}
   25%  {left: 10vw; top:17vw;}
+  100% {left: 10vw; top: 17vw}
 }
 
 	  divMoveLeft {
+animation-fill-mode: forwards !important; 
   width: 100px;
   height: 100px;
   position: absolute;
@@ -37,8 +41,10 @@
 }
 
 @keyframes moveLeft {
-  0%   {left:150vw; top:20vw;}
-  25%  {left:85vw; top:20vw;}
+  0%   {left:150vw; top:19vw;}
+  25%  {left:85vw; top:19vw;}
+  100%  {left:85vw; top:19vw;}
+
 }
 	  divMoveDown {
   width: 100vw;
@@ -147,7 +153,6 @@ background-color: none;
 <body bgcolor="611920">
 
 	<h>
-		 <p style = "padding-left: 10vw; padding-top: 17vw;">				
 
 	 <divMoveRight>
 		<a href= "visualArt.html" style = "font-size: 10vw; color:black; z-index: 2; text-shadow: 0px 0px 15px orange; 10vw; text-decoration: none;">
@@ -158,10 +163,6 @@ background-color: none;
 </a>
 
 </divMoveRight>	
-</p>
-</p>
-			 <p style = "padding-left: 85vw; margin-top: -2vw;">				
-
 <divMoveLeft>	
 	<divMedia>	
 		<a href= "gallery.html" style = "font-size: 7vw; color:black; z-index: 1; text-decoration: none; text-shadow: 0px 0px 15px orange;">
@@ -179,7 +180,7 @@ background-color: none;
 </h>
 <center>
 		<divMoveDown>
-		<img src="images\logo\main.PNG" style="width: 65vw; z-index: 2; margin-top: -20%; margin-bottom: -10%;">
+		<img src="images\logo\main.PNG" style="width: 65vw; z-index: 2; margin-top: -45%; margin-bottom: -10%;">
 			</divMoveDown>
 		<br>
 			<br>	
